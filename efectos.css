@@ -1,7 +1,8 @@
 /* estilos.css */
-.body {
+body {
       font-family: Arial, sans-serif;
       background-color: #e97c5d;
+      color: rgb(58, 22, 159);
       margin: 10;
       padding: 10;
     }
@@ -46,7 +47,7 @@
     }
 
     .card p {
-      font-size: 14px;
+      font-size: 20px;
       color: #e97c5d;
     }
     .card img {
