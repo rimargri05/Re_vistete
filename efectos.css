@@ -1,0 +1,149 @@
+/* estilos.css */
+.body {
+      font-family: Arial, sans-serif;
+      background-color: #e97c5d;
+      margin: 10;
+      padding: 10;
+    }
+
+    .gallery {
+      justify-content: center;
+      gap: 20px;
+      padding: 50px;  
+     }   
+    .container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 50px;
+    }
+
+    .card {
+      background: rgb(243, 217, 204);
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      text-align: center;
+      width: 250px;
+      padding: 20px;
+      cursor: pointer;
+      transition: transform 0.2s ease-in-out;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      width: 80px;
+      margin: center;
+    }
+
+    .card h2 {
+      color: #e97c5d;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #e97c5d;
+    }
+    .card img {
+    width:50%;
+    height:50%;
+    object-fit:cover;
+    display:block;
+    transition:transform 0.35s ease, filter 0.35s ease, opacity 0.35s ease;
+}
+    .gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+}
+    .title {
+    font-size: clamp(1.6rem, 3.5vw, 3 rem);
+    margin: 2;
+    font-weight: 700;
+    background: linear-gradient(90deg, rgb(245, 176, 142), rgb(249, 158, 112), rgb(244, 117, 54), rgb(251, 87, 6));
+    background-size: 200% 200%;
+    background-clip: text;
+    color: transparent;
+    transition: background-position 0.6s ease;
+    cursor: default;
+}
+    .title:hover {
+    background-position: 100% 0;
+}
+
+    main {
+    max-width: 120px;
+    margin: 1rem auto;
+    padding: 0 1rem;
+}
+/* Título */
+.title {
+    font-size: 2rem;
+    color: #e9967a;  /* tono salmón */
+    margin: 0;
+    font-weight: 600;
+}
+/* Slogan */
+.slogan {
+    font-size: 1rem;
+    color: #555;
+    margin: 8px 0;
+}
+
+/* Línea decorativa */
+.divider {
+    border: none;
+    border-top: 2px solid #e9967a;
+    width: 80%;
+    margin: 15px auto;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .logo-title {
+    flex-direction: column;
+}
+.title {
+    font-size: 1.5rem;
+}
+.slogan {
+    font-size: 0.9rem;
+}
+}
+
+.subtitulo {
+    
+    font-family: "fuente elegante", serif; /* Fuente elegante */
+    color: #f36e6ee8; /* Color del subtítulo */
+    font-size: 28px; /* Tamaño de fuente mediano */
+    margin-top: 15px; /* Espacio superior */
+    margin-bottom: 15px; /* Espacio inferior */
+    text-shadow: 0 0px 0px rgba(0, 0, 0, 0.1); /* Sombra sutil para resaltar */
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Espacio entre las imágenes */
+    justify-content: center; /* Centrar las imágenes */
+}
+.imagene-link {
+    margin: 10px; /* Espacio alrededor de los enlaces */
+    text-decoration: none; /* Quitar subrayado de los enlaces */
+}
+    .galeria a img {
+        width: 300px; /* Ancho de las imágenes */
+    max-width: 0%; /* Ancho máximo de las imágenes */
+    height: 200px; /* Altura de las imágenes */
+    object-fit: cover;/* Bordes redondeados */
+    margin: 10px; /* Espacio alrededor de las imágenes */
+    }
+    .imagene-link img:hover {
+        transform: scale(1.05); /* Efecto de zoom al pasar el ratón */
+        transition: transform 0.3s; /* Transición suave */
+    }/* Transición suave */
