@@ -1,3 +1,63 @@
+<<<<<<< HEAD
+--/* estilos.css */
+body {
+      font-family: Arial, sans-serif;
+      background-color: #e97c5d;
+      color: rgb(58, 22, 159);
+      margin: 10;
+      padding: 10;
+    }
+
+    .gallery {
+      justify-content: center;
+      gap: 20px;
+      padding: 50px;  
+     }   
+    .container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 50px;
+    }
+
+    .card {
+      background: rgb(243, 217, 204);
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      text-align: center;
+      width: 250px;
+      padding: 20px;
+      cursor: pointer;
+      transition: transform 0.2s ease-in-out;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      width: 80px;
+      margin: center;
+    }
+
+    .card h2 {
+      color: #e97c5d;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 20px;
+      color: #e97c5d;
+    }
+    .card img {
+    width:50%;
+    height:50%;
+    object-fit:cover;
+    display:block;
+    transition:transform 0.35s ease, filter 0.35s ease, opacity 0.35s ease;
+=======
 .logo-titulo {
     display: block;
     margin-left: 0;
@@ -7,6 +67,7 @@
     background: none;
     box-shadow: none;
     border-radius: 0; 
+>>>>>>> 4c9721793f2a144b3707c205c7c8c52d237f0cba
 }
 
 body {
