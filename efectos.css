@@ -1,7 +1,7 @@
 .logo-titulo {
     display: block;
-    margin left: 0;
-    margin top: 5px;
+    margin-left: 0;
+    margin-top: 5px;
     width: 400px;
     height: auto;
     background: none;
@@ -10,7 +10,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Nunito', sans-serif;
     background-color: #f5cfc4;
     margin: 1px;
     padding: 1px;
@@ -44,7 +44,7 @@ body {
       color: #e97c5d 
 }
 
-menu a {
+.menu a {
       color: white;
       text-decoration: none;
       font-size: 14px;
@@ -56,14 +56,6 @@ menu a {
       opacity: 0.7;
 }
 
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 1rem;
-    justify-content: center;
-    padding: 50px;
-}
-
 .container {
     display: flex;
     justify-content: center;
@@ -71,9 +63,8 @@ menu a {
     padding: 50px;
 }
 
-
 .card {
-    background: rgb(243, 217, 204);
+    background: #f5cfc4;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     text-align: center;
@@ -91,7 +82,7 @@ menu a {
 
 .card img {
     width: 80px;
-    margin: center;
+    margin: 0 auto;
     object-fit: cover;
     display: block;
     transition: transform 0.35s ease, filter 0.35s ease, opacity 0.35s ease;
@@ -151,7 +142,7 @@ main {
 }
 
 @media (max-width: 600px) {
-    .logo-title {
+    .logo-titulo {
         flex-direction: column;
     }
     .title {
@@ -191,4 +182,90 @@ main {
 .imagene-link img:hover {
     transform: scale(1.05);
     transition: transform 0.3s;
+}
+
+/*Formulario*/
+form {
+    margin: 20px auto;
+    max-width: 500px;
+    padding: 10px;
+    border: 1px solid white;
+    background-color: #f1ded8;
+    border-radius: 1px;
+}
+h1 {
+    text-align: center;
+    color: #e97c5d;
+}
+label {
+    display: block;
+    margin-top: 5px;
+    text-align: center;
+    color: #e97c5d;
+}
+input {
+    display: block;
+    margin: 10px auto;
+    width: 80%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: 2px solid #e97c5d;
+}
+
+input:focus {
+    outline: none;             
+    border-color: #e97c5d;    
+    box-shadow: 0 0 5px #f5b9a7; 
+}
+
+button {
+    display: block;
+    margin: 15px auto;
+    padding: 12px 20px;
+    background-color: #e97c5d;
+    color: white;
+    font-size: 16px
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease
+}
+button:hover {
+    background-color: #d86b4f;     
+    transform: scale(1.05);        
+}
+
+button:active {
+    background-color: #c45a3f;     
+    transform: scale(0.98);         
+
+h1, h2 {
+      font-family: 'Montserrat', sans-serif;
+}
+
+p, a, input, label, button {
+  font-family: 'Nunito', sans-serif;
+}
+
+footer {
+    background-color: #e97c5d;
+    padding: 15px;
+    text-align: center;
+    margin-top: 40px;
+    border-top: 2px solid #c45a3f;
+}
+
+.footer-link {
+    color: white;
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+    color: #fcd5c9;
 }
