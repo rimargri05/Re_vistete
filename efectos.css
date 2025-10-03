@@ -1,73 +1,47 @@
-<<<<<<< HEAD
---/* estilos.css */
-body {
-      font-family: Arial, sans-serif;
-      background-color: #e97c5d;
-      color: rgb(58, 22, 159);
-      margin: 10;
-      padding: 10;
-    }
-
-    .gallery {
-      justify-content: center;
-      gap: 20px;
-      padding: 50px;  
-     }   
-    .container {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      padding: 50px;
-    }
-
-    .card {
-      background: rgb(243, 217, 204);
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-      text-align: center;
-      width: 250px;
-      padding: 20px;
-      cursor: pointer;
-      transition: transform 0.2s ease-in-out;
-      text-decoration: none;
-      color: inherit;
-    }
-
-    .card:hover {
-      transform: scale(1.05);
-    }
-
-    .card img {
-      width: 80px;
-      margin: center;
-    }
-
-    .card h2 {
-      color: #e97c5d;
-      margin-bottom: 10px;
-    }
-
-    .card p {
-      font-size: 20px;
-      color: #e97c5d;
-    }
-    .card img {
-    width:50%;
-    height:50%;
-    object-fit:cover;
-    display:block;
-    transition:transform 0.35s ease, filter 0.35s ease, opacity 0.35s ease;
-=======
 .logo-titulo {
     display: block;
     margin-left: 0;
     margin-top: 5px;
-    width: 400px;
+    width: 600px;
     height: auto;
     background: none;
     box-shadow: none;
     border-radius: 0; 
->>>>>>> 4c9721793f2a144b3707c205c7c8c52d237f0cba
+}
+
+.header {
+  text-align: center;  
+  padding: 10px 20px;
+}
+
+.logo-slogan {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  gap: 100px; 
+}
+
+.slogan {
+  font-size: 2rem !important;   
+  color: #e97c5d !important;
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+}
+
+.divider {
+  border: none;
+  border-top: 3px solid #fcf8f7; 
+  width: 85%;
+  margin: 20px auto;  
+}
+
+.descripcion {
+  max-width: 800px;
+  margin: 15px auto;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #c45a3f;
+  line-height: 1.6;
 }
 
 body {
@@ -75,34 +49,6 @@ body {
     background-color: #f5cfc4;
     margin: 1px;
     padding: 1px;
-}
-
-.search-box {
-      flex: 1;
-      max-width: 500px;
-      margin: 0 40px;
-      position: relative;
-}
-
-.search-box input {
-      width: 100%;
-      padding: 10px 40px 10px 15px;
-      border-radius: 20px;
-      border: none;
-      outline: none;
-      font-size: 14px;
-}
-
-.search-box button {
-      position: absolute;
-      right: 10px;
-      top: 50%;
-      transform: translateY(-50%);
-      background: none;
-      border: none;
-      cursor: pointer;
-      font-size: 16px;
-      color: #e97c5d 
 }
 
 .menu a {
@@ -258,12 +204,14 @@ h1 {
     text-align: center;
     color: #e97c5d;
 }
+
 label {
     display: block;
     margin-top: 5px;
     text-align: center;
     color: #e97c5d;
 }
+
 input {
     display: block;
     margin: 10px auto;
@@ -286,13 +234,14 @@ button {
     padding: 12px 20px;
     background-color: #e97c5d;
     color: white;
-    font-size: 16px
+    font-size: 16px;
     font-weight: bold;
     border: none;
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease
 }
+
 button:hover {
     background-color: #d86b4f;     
     transform: scale(1.05);        
@@ -300,7 +249,8 @@ button:hover {
 
 button:active {
     background-color: #c45a3f;     
-    transform: scale(0.98);         
+    transform: scale(0.98);  
+}       
 
 h1, h2 {
       font-family: 'Montserrat', sans-serif;
@@ -311,22 +261,26 @@ p, a, input, label, button {
 }
 
 footer {
-    background-color: #e97c5d;
-    padding: 15px;
-    text-align: center;
-    margin-top: 40px;
-    border-top: 2px solid #c45a3f;
+    background-color: #e97c5d;    
+    padding: 10px;
+    text-align: center;            
+    border-top: 1px solid #c45a3f;
+    position: fixed;               
+    bottom: 0;                     
+    left: 0;                       
+    width: 100%;                   
+    z-index: 1000;                 
 }
 
 .footer-link {
     color: white;
     text-decoration: none;
     font-family: 'Nunito', sans-serif;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 .footer-link:hover {
-    color: #fcd5c9;
+    color: #fcd5c9;   
 }
