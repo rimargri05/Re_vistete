@@ -19,6 +19,7 @@
   align-items: center;
   justify-content: center; 
   gap: 100px; 
+  margin-bottom: 5px;
 }
 
 .slogan {
@@ -145,7 +146,7 @@ main {
     border: none;
     border-top: 2px solid #fcf8f7;
     width: 80%;
-    margin: 15px auto;
+    margin: 10px auto;
 }
 
 @media (max-width: 600px) {
@@ -269,18 +270,231 @@ footer {
     bottom: 0;                     
     left: 0;                       
     width: 100%;                   
-    z-index: 1000;                 
+    z-index: 10;                 
 }
 
-.footer-link {
-    color: white;
-    text-decoration: none;
+.footer-index {
+    background-color: #c45a3f;
+    padding: 8px 10px;        /* menos alto */
+    text-align: center;
+    border-top: 2px solid #a34730;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: #fcf8f7;
     font-family: 'Nunito', sans-serif;
-    font-size: 12px;
-    font-weight: bold;
-    transition: color 0.3s ease;
+    font-size: 13px;
+    line-height: 1.4;        /* reduce el espacio entre líneas */
 }
 
-.footer-link:hover {
-    color: #fcd5c9;   
+.footer-index p {
+    margin: 2px 0;           /* quita el espacio grande por defecto */
+}
+
+.footer-index a {
+    color: #fcd5c9;
+    text-decoration: none;
+}
+
+.footer-index a:hover {
+    color: #ffeae2;
+}
+
+/* evita que el footer tape el contenido */
+main {
+    margin-bottom: 100px;      /* ajusta según la altura del footer */
+}
+
+/* Contenedor del logo + slogan + botón */
+.header-top {
+  display: flex;
+  justify-content: space-between;  /* logo a la izquierda, botón a la derecha */
+  align-items: center;
+  padding: 0 20px;
+}
+
+/* Ajuste del bloque logo-slogan */
+.logo-slogan {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Botón de ingresar */
+.btn-ingresar {
+  background-color: #e97c5d;
+  color: white;
+  font-family: 'Nunito', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-ingresar:hover {
+  background-color: #d86b4f;
+  transform: scale(1.05);
+}
+
+.btn-ingresar:active {
+  background-color: #c45a3f;
+  transform: scale(0.95);
+}
+
+.header {
+  position: relative; /* clave para que el botón se posicione dentro */
+}
+
+/* Botón arriba a la derecha */
+.btn-ingresar {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  background-color: #e97c5d;
+  color: white;
+  font-family: 'Nunito', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-ingresar:hover {
+  background-color: #d86b4f;
+  transform: scale(1.05);
+}
+
+.btn-ingresar:active {
+  background-color: #c45a3f;
+  transform: scale(0.95);
+}
+
+body {
+  margin: 0;
+  font-family: 'Nunito', sans-serif;
+  background-color: #fdfaf6;
+}
+
+/* Contenedor principal en dos columnas */
+.login-container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Columna izquierda */
+.login-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fdfaf6;
+  color: #e97c5d;
+}
+
+.login-logo {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+.login-slogan {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  color: #e97c5d;
+  line-height: 1.2;
+}
+.login-slogan .sub {
+  font-size: 18px;
+  font-weight: normal;
+}
+
+/* Columna derecha */
+.login-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fffaf6;
+}
+
+.login-title {
+  font-size: 36px;
+  color: #8c8c8c;
+  margin-bottom: 20px;
+}
+
+/* Formulario */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 280px;
+}
+
+.login-form input {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #e97c5d;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.login-form input::placeholder {
+  color: white;
+  opacity: 0.9;
+}
+
+.btn-principal {
+  background-color: #e97c5d;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+.btn-principal:hover {
+  background-color: #d86b4f;
+}
+
+/* Links pequeños */
+.login-links {
+  margin: 15px 0;
+  font-size: 14px;
+  color: #8c8c8c;
+  text-align: center;
+}
+.login-links a {
+  color: #8c8c8c;
+  text-decoration: none;
+}
+.login-links a:hover {
+  text-decoration: underline;
+}
+
+/* Botón secundario */
+.btn-secundario {
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #e97c5d;
+  color: white;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.btn-secundario:hover {
+  background-color: #d86b4f;
 }
