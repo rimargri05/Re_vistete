@@ -1,0 +1,317 @@
+/* ------------------------------
+   ESTILOS GENERALES
+------------------------------ */
+body {
+  font-family: 'Nunito', sans-serif;
+  background-color: #f5cfc4;
+  margin: 0;
+  padding: 0;
+  color: #c45a3f;
+}
+
+h1, h2 {
+  font-family: 'Montserrat', sans-serif;
+  color: #c45a3f;
+}
+
+/* ------------------------------
+   ENCABEZADO CON LOGO Y SLOGAN
+------------------------------ */
+.header {
+  text-align: center;
+  padding: 10px 20px;
+  position: relative;
+}
+.logo-slogan {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  margin-top: 20px;
+}
+
+.logo-titulo {
+  width: 350px;
+  height: auto;
+}
+
+.slogan {
+  font-size: 1.8rem;
+  color: #e97c5d;
+  font-weight: bold;
+  font-family: 'Nunito', sans-serif;
+}
+
+
+/* ------------------------------
+   BOTÓN INGRESAR (ESQUINA DERECHA)
+------------------------------ */
+.ingresar-btn {
+  position: absolute;
+  top: 25px;
+  right: 40px;
+  background-color: #e97c5d;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  font-weight: bold;
+  font-size: 14px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.ingresar-btn:hover {
+  background-color: #d86b4f;
+  transform: scale(1.05);
+}
+
+/* ------------------------------
+   SECCIÓN TARJETAS (INDEX)
+------------------------------ */
+.seccion-tarjetas {
+  background-color: #e97c5d;
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1100px;
+  margin: 60px auto;
+  border-radius: 12px;
+}
+
+.tarjetas-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.tarjeta {
+  background-color: #fce1d8;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+  padding: 30px 20px;
+  width: 250px;
+  text-decoration: none;
+  color: #e97c5d;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.2);
+}
+
+.tarjeta img {
+  width: 80px;
+  height: auto;
+  margin: 10px auto;
+  display: block;
+}
+
+/* ------------------------------
+   FORMULARIOS
+------------------------------ */
+.titulo-formulario {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  color: #e97c5d;
+}
+
+form {
+  margin: 30px auto;
+  max-width: 500px;
+  padding: 20px;
+  background-color: #f1ded8;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+label {
+  display: block;
+  margin-top: 8px;
+  text-align: center;
+  color: #e97c5d;
+}
+
+input {
+  display: block;
+  width: 80%;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 8px;
+  border: 2px solid #e97c5d;
+}
+
+button {
+  display: block;
+  margin: 15px auto;
+  padding: 12px 20px;
+  background-color: #e97c5d;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #d86b4f;
+  transform: scale(1.05);
+}
+
+/* ------------------------------
+   FOOTER
+------------------------------ */
+footer {
+  background-color: #e97c5d;
+  color: #fff;
+  text-align: center;
+  padding: 6px;
+  border-top: 2px solid #c45a3f;
+  font-size: 13px;
+  line-height: 1.4;
+  margin-top: 60px;
+}
+
+/* ------------------------------
+   LOGIN PAGE
+------------------------------ */
+body.login-page {
+  background-color: #fffaf5;
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+  color: #c45a3f;
+}
+
+.login-barra {
+  background-color: #e97c5d;
+  height: 90px;
+  width: 100%;
+}
+
+.login-contenido {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 60px 100px;
+}
+
+.login-izquierda {
+  flex: 1;
+  text-align: center;
+}
+
+.login-logo {
+  width: 180px;
+  margin-bottom: 10px;
+}
+
+.login-texto {
+  color: #e97c5d;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.login-texto span {
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+.login-derecha {
+  flex: 1;
+  text-align: center;
+}
+
+.login-titulo {
+  font-family: 'Montserrat', sans-serif;
+  color: #a5a19f;
+  font-size: 2rem;
+  margin-bottom: 25px;
+}
+
+.login-derecha input {
+  display: block;
+  width: 70%;
+  margin: 10px auto;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #e97c5d;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+
+.login-derecha input::placeholder {
+  color: white;
+}
+
+.login-derecha button {
+  background-color: #e97c5d;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 35px;
+  margin-top: 15px;
+  cursor: pointer;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.login-derecha button:hover {
+  background-color: #d86b4f;
+  transform: scale(1.05);
+}
+
+.login-links {
+  margin-top: 15px;
+  color: #a5a19f;
+  font-size: 0.9rem;
+}
+
+.login-links a {
+  color: #a5a19f;
+  text-decoration: none;
+}
+
+.login-links a:hover {
+  color: #e97c5d;
+}
+
+.login-volver {
+  display: inline-block;
+  margin-top: 25px;
+  background-color: #e97c5d;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 25px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.login-volver:hover {
+  background-color: #d86b4f;
+  transform: scale(1.05);
+}
+
+/* ------------------------------
+   RESPONSIVE
+------------------------------ */
+@media (max-width: 900px) {
+  .login-contenido {
+    flex-direction: column;
+    padding: 30px 20px;
+  }
+}

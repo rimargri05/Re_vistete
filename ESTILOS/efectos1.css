@@ -9,15 +9,6 @@
     border-radius: 0; 
 }
 
-
-.imagen-dama1 {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%; 
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
-    transition: transform 0.3s ease, box-shadow 0.3s ease; 
-}
-
 .header {
   text-align: center;  
   padding: 10px 20px;
@@ -46,7 +37,7 @@
 }
 
 .descripcion {
-  max-width: 800px;
+  max-width: 1000px;
   margin: 15px auto;
   text-align: center;
   font-size: 1.2rem;
@@ -179,8 +170,6 @@ main {
     margin-bottom: 15px;
     text-shadow: 0 0px 0px rgba(0, 0, 0, 0.1);
 }
-/*Productos galeria vanessa tascon*/
-
 
 /*Formulario*/
 form {

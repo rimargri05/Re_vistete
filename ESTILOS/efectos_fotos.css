@@ -1,0 +1,163 @@
+body {
+  font-family: 'Nunito', sans-serif;
+  background-color: #f5cfc4;
+  color: #c45a3f;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* CABECERA CON LOGO Y SLOGAN */
+.logo-slogan {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  margin-top: 20px;
+}
+
+.logo-titulo {
+  width: 350px;
+  height: auto;
+}
+
+.slogan {
+  font-size: 1.8rem;
+  color: #e97c5d;
+  font-weight: bold;
+  font-family: 'Nunito', sans-serif;
+}
+
+/* CONTENEDOR DE PRODUCTOS */
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 60px;
+  padding: 40px;
+  justify-items: center;
+}
+
+.imagen-container {
+  background: #f1ded8;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  text-align: center;
+  width: 220px;
+  padding: 15px;
+  transition: transform 0.3s ease;
+}
+
+.imagen-container:hover {
+  transform: scale(1.03);
+}
+
+.imagen-container img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: filter 0.3s ease, transform 0.3s ease;
+  filter: blur(2px);
+}
+
+.imagen-container:hover img {
+  filter: blur(0);
+  transform: scale(1.02);
+}
+
+/* TITULOS Y BOTONES */
+.imagen-container h3 {
+  color: #e97c5d;
+  margin: 10px 0 5px;
+}
+
+.imagen-container p {
+  font-size: 14px;
+  margin: 4px 0;
+}
+
+button {
+  background-color: #e97c5d;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #d86b4f;
+  transform: scale(1.05);
+}
+
+/* FOOTER */
+footer {
+  background-color: #c45a3f;
+  color: #fff;
+  text-align: center;
+  padding: 8px;
+  border-top: 2px solid #a34730;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  font-family: 'Nunito', sans-serif;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+footer a {
+  color: #fcd5c9;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #ffeae2;
+}
+
+main {
+  margin-bottom: 90px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .logo-slogan {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .logo-titulo {
+    width: 280px;
+  }
+
+  .slogan {
+    font-size: 1.3rem;
+  }
+
+  .container {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 15px;
+  }
+
+  .imagen-container {
+    width: 180px;
+  }
+}
+
+.section-title {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 28px;
+  color: #e97c5d;       /* tono terracota que ya usas */
+  margin: 40px 0 20px;  /* espacio arriba y abajo */
+  text-transform: uppercase;
+}
+
+.comprar {
+  background-color: #e97c5d;
+}
+.comprar:hover {
+  background-color: #d86b4f;
+}
