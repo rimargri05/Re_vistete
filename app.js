@@ -18,17 +18,17 @@ app.post('/ingresar', (req, res) => {
   const sql = 'INSERT INTO usuarios (nombre, correo, contrasena) VALUES (?, ?, ?)';
   conexion.query(sql, [nombre, correo, contrasena], (error, resultado) => {
     if (error) {
-      console.error('❌ Error al guardar los datos:', error);
+      console.error('Error al guardar los datos:', error);
       res.status(500).send('Error al registrar los datos');
     } else {
-      console.log('✅ Usuario registrado:', resultado);
-      res.send('Datos guardados correctamente 🎉');
+      console.log('Usuario registrado:', resultado);
+      res.send('Datos guardados correctamente');
     }
   });
 });
 
 // Iniciar servidor
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
   console.log(`🚀 Servidor corriendo en el puerto ${PORT}`);
 });
