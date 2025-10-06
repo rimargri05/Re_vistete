@@ -30,8 +30,8 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-//inhabilitado por causa de ejemplo
-/*
+
+
 const ingresar = 'SELECT * FROM ingresar'; //  tabla real
 
 conexion.query(ingresar, function(error, lista) {
@@ -46,7 +46,7 @@ conexion.query(ingresar, function(error, lista) {
 
 // Cerrar conexión (opcional)
 conexion.end();
-*/
+
 
 // Registro de usuarios
 app.post('/registro', async (req, res) => {
