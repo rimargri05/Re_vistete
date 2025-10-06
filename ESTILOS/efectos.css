@@ -315,3 +315,11 @@ body.login-page {
     padding: 30px 20px;
   }
 }
+
+#index .descripcion {
+  font-size: 6rem;        /* Aumenta el tamaño (puedes subirlo más si quieres) */
+  font-weight: bold;      /* Hace el texto más grueso */
+  color: #c45a3f;         /* Mantiene tu tono terracota */
+  text-align: center;     /* Centra el párrafo */
+  line-height: 1.5;       /* Mejora la lectura */
+}
